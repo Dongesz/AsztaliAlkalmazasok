@@ -1,1 +1,1 @@
-Három 5-öst megér!
+Majoros Mate Martin - 12.B
