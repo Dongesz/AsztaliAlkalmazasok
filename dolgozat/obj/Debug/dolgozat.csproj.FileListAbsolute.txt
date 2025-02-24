@@ -1,0 +1,15 @@
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\bin\Debug\dolgozat.exe.config
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\bin\Debug\dolgozat.exe
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\bin\Debug\dolgozat.pdb
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat.csproj.AssemblyReference.cache
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\MainWindow.g.cs
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\App.g.cs
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat_MarkupCompile.cache
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat_MarkupCompile.lref
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\MainWindow.baml
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat.g.resources
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat.Properties.Resources.resources
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat.csproj.GenerateResource.cache
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat.csproj.CoreCompileInputs.cache
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat.exe
+C:\Users\Tanulo\source\repos\dolgozat\dolgozat\obj\Debug\dolgozat.pdb

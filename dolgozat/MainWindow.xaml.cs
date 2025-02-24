@@ -1,28 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace dolgozat
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    internal class AutoJeladas
     {
-        public MainWindow()
+        public string Rendszam { get; set; }
+        public int Ora { get; set; }
+        public int Perc { get; set; }
+        public int Sebesseg { get; set; }
+
+        public AutoJeladas(string sor)
         {
-            InitializeComponent();
+            var adatok = sor.Split('\t'); // Tabulátor alapú feldolgozás
+            Rendszam = adatok[0];
+            Ora = int.Parse(adatok[1]);
+            Perc = int.Parse(adatok[2]);
+            Sebesseg = int.Parse(adatok[3]);
+        }
+
+        public override string ToString()
+        {
+            return $"{Rendszam} {Ora}:{Perc} - {Sebesseg} km/h";
         }
     }
 }

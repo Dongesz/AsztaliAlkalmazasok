@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="BtnBeolvas" Content="Adatok betöltése" Width="150" Height="30"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"
+                Click="BtnBeolvas_Click"/>
+
+        <ListBox x:Name="LstAdatok" Width="360" Height="250"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
     </Grid>
 </Window>

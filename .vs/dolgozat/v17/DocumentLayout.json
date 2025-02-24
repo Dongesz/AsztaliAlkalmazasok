@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|c:\\users\\tanulo\\source\\repos\\dolgozat\\dolgozat\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|solutionrelative:dolgozat\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|c:\\users\\tanulo\\source\\repos\\dolgozat\\dolgozat\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|solutionrelative:dolgozat\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|c:\\users\\tanulo\\source\\repos\\dolgozat\\dolgozat\\autojeladas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|solutionrelative:dolgozat\\autojeladas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|c:\\users\\tanulo\\source\\repos\\dolgozat\\dolgozat\\jeladas.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4938C7C3-BDBF-4E42-9E7B-AEFAD7F182CA}|dolgozat\\dolgozat.csproj|solutionrelative:dolgozat\\jeladas.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutoJeladas.cs",
+              "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\AutoJeladas.cs",
+              "RelativeDocumentMoniker": "dolgozat\\AutoJeladas.cs",
+              "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\AutoJeladas.cs",
+              "RelativeToolTip": "dolgozat\\AutoJeladas.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T09:32:49.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "jeladas.txt",
+              "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\jeladas.txt",
+              "RelativeDocumentMoniker": "dolgozat\\jeladas.txt",
+              "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\jeladas.txt",
+              "RelativeToolTip": "dolgozat\\jeladas.txt",
+              "ViewState": "AgIAAMcFAAAAAAAAAAAAwKgGAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-24T09:30:37.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "dolgozat\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\MainWindow.xaml.cs",
+              "RelativeToolTip": "dolgozat\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T09:28:15.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "dolgozat\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\MainWindow.xaml",
+              "RelativeToolTip": "dolgozat\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-24T09:28:01.454Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
