@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace dolgozat
 {
-    internal class AutoJeladas
+    public class AutoJeladas
     {
         public string Rendszam { get; set; }
         public int Ora { get; set; }
@@ -29,15 +29,31 @@ namespace dolgozat
         {
             if (jeladasok == null || jeladasok.Count == 0)
             {
-                return new List<AutoJeladas>(); // Ha nincs adat, üres listát adunk vissza
+                return new List<AutoJeladas>();
             }
 
             return jeladasok
-                .OrderByDescending(j => j.Ora)   // Legnagyobb óra előre
-                .ThenByDescending(j => j.Perc)   // Ha az óra megegyezik, akkor perc alapján
-                .Take(db)                        // Az első `db` darabot vesszük (alapértelmezett 8)
+                .OrderByDescending(j => j.Ora)
+                .ThenByDescending(j => j.Perc)
+                .Take(db)
                 .ToList();
         }
 
+        public static string ElsoJarmuJelzesei(List<AutoJeladas> jeladasok)
+        {
+            if (jeladasok == null || jeladasok.Count == 0)
+            {
+                return "Nincs adat";
+            }
+
+            string elsoJarmuRendszam = jeladasok[0].Rendszam;
+
+            var idopontok = jeladasok
+                .Where(j => j.Rendszam == elsoJarmuRendszam)
+                .Select(j => $"{j.Ora}:{j.Perc}")
+                .ToList();
+
+            return string.Join(" ", idopontok);
+        }
     }
 }

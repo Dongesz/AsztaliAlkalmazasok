@@ -63,7 +63,17 @@ namespace dolgozat
             }
         }
 
+        private void BtnElsoJarmu_Click(object sender, RoutedEventArgs e)
+        {
+            if (jeladasok == null || jeladasok.Count == 0)
+            {
+                MessageBox.Show("Nincs betöltött adat! Először töltse be a fájlt.");
+                return;
+            }
 
+            string idopontok = AutoJeladas.ElsoJarmuJelzesei(jeladasok);
 
+            LblElsoJarmu.Content = $"Első jármű jelzései: {idopontok}";
+        }
     }
 }
