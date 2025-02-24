@@ -55,5 +55,16 @@ namespace dolgozat
 
             return string.Join(" ", idopontok);
         }
+
+        public static int IdopontJelzeseinekSzama(List<AutoJeladas> jeladasok, int ora, int perc)
+        {
+            if (jeladasok == null || jeladasok.Count == 0)
+            {
+                return 0;
+            }
+
+            return jeladasok
+                .Count(j => j.Ora == ora && j.Perc == perc);
+        }
     }
 }
