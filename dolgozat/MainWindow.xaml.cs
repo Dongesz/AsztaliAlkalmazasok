@@ -1,26 +1,69 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Windows;
 
 namespace dolgozat
 {
-    internal class AutoJeladas
+    public partial class MainWindow : Window
     {
-        public string Rendszam { get; set; }
-        public int Ora { get; set; }
-        public int Perc { get; set; }
-        public int Sebesseg { get; set; }
+        private List<AutoJeladas> jeladasok = new List<AutoJeladas>();
 
-        public AutoJeladas(string sor)
+        public MainWindow()
         {
-            var adatok = sor.Split('\t'); // Tabulátor alapú feldolgozás
-            Rendszam = adatok[0];
-            Ora = int.Parse(adatok[1]);
-            Perc = int.Parse(adatok[2]);
-            Sebesseg = int.Parse(adatok[3]);
+            InitializeComponent();
         }
 
-        public override string ToString()
+        private void BtnBeolvas_Click(object sender, RoutedEventArgs e)
         {
-            return $"{Rendszam} {Ora}:{Perc} - {Sebesseg} km/h";
+            try
+            {
+                string filePath = "C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\jeladas.txt";
+
+                if (!File.Exists(filePath))
+                {
+                    MessageBox.Show("A 'jeladas.txt' fájl nem található!");
+                    return;
+                }
+
+                string[] sorok = File.ReadAllLines(filePath);
+                jeladasok = sorok
+                    .Where(sor => !string.IsNullOrWhiteSpace(sor))
+                    .Select(sor => new AutoJeladas(sor))
+                    .ToList();
+
+                LstAdatok.ItemsSource = jeladasok;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt a fájl beolvasásakor: " + ex.Message);
+            }
         }
+
+        private void BtnUtolsoJeladas_Click(object sender, RoutedEventArgs e)
+        {
+            if (jeladasok == null || jeladasok.Count == 0)
+            {
+                MessageBox.Show("Nincs betöltött adat! Először töltse be a fájlt.");
+                return;
+            }
+
+            List<AutoJeladas> utolsoJeladasok = AutoJeladas.LegutobbiJeladasok(jeladasok);
+
+            if (utolsoJeladasok.Count > 0)
+            {
+                LstAdatok.ItemsSource = utolsoJeladasok
+                    .Select(j => $"{j.Ora}:{j.Perc} - {j.Rendszam} ({j.Sebesseg} km/h)")
+                    .ToList();
+            }
+            else
+            {
+                MessageBox.Show("Nincs elérhető jelzés!");
+            }
+        }
+
+
+
     }
 }

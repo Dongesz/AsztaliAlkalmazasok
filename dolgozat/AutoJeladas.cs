@@ -1,37 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Windows;
 
 namespace dolgozat
 {
-    public partial class MainWindow : Window
+    internal class AutoJeladas
     {
-        private List<AutoJeladas> jeladasok = new List<AutoJeladas>();
+        public string Rendszam { get; set; }
+        public int Ora { get; set; }
+        public int Perc { get; set; }
+        public int Sebesseg { get; set; }
 
-        public MainWindow()
+        public AutoJeladas(string sor)
         {
-            InitializeComponent();
+            var adatok = sor.Split('\t');
+            Rendszam = adatok[0];
+            Ora = int.Parse(adatok[1]);
+            Perc = int.Parse(adatok[2]);
+            Sebesseg = int.Parse(adatok[3]);
         }
 
-        private void BtnBeolvas_Click(object sender, RoutedEventArgs e)
+        public override string ToString()
         {
-            try
-            {
-                // Fájl beolvasása
-                string[] sorok = File.ReadAllLines("C:\\Users\\Tanulo\\source\\repos\\dolgozat\\dolgozat\\jeladas.txt");
-
-                // Adatok feldolgozása
-                jeladasok = sorok.Select(sor => new AutoJeladas(sor)).ToList();
-
-                // Kiírás ListBoxba
-                LstAdatok.ItemsSource = jeladasok;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hiba történt a fájl beolvasásakor: " + ex.Message);
-            }
+            return $"{Rendszam} {Ora}:{Perc} - {Sebesseg} km/h";
         }
+
+        public static List<AutoJeladas> LegutobbiJeladasok(List<AutoJeladas> jeladasok, int db = 8)
+        {
+            if (jeladasok == null || jeladasok.Count == 0)
+            {
+                return new List<AutoJeladas>(); // Ha nincs adat, üres listát adunk vissza
+            }
+
+            return jeladasok
+                .OrderByDescending(j => j.Ora)   // Legnagyobb óra előre
+                .ThenByDescending(j => j.Perc)   // Ha az óra megegyezik, akkor perc alapján
+                .Take(db)                        // Az első `db` darabot vesszük (alapértelmezett 8)
+                .ToList();
+        }
+
     }
 }

@@ -1,1 +1,19 @@
+# Visual Studio cache és beállítások kizárása
 .vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build és temp fájlok kizárása
+bin/
+obj/
+*.exe
+*.pdb
+*.cache
+*.lref
+*.g.cs
+*.g.i.cs
+*.baml
+*.FileListAbsolute.txt
