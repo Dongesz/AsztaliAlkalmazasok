@@ -94,5 +94,36 @@ namespace dolgozat
 
             LblIdopontJelzes.Content = $"Ebben az időpontban {darab} jeladás történt.";
         }
+
+        private void BtnLeggyorsabbJarmu_Click(object sender, RoutedEventArgs e)
+        {
+            if (jeladasok == null || jeladasok.Count == 0)
+            {
+                MessageBox.Show("Nincs betöltött adat! Először töltse be a fájlt.");
+                return;
+            }
+
+            AutoJeladas leggyorsabb = AutoJeladas.LeggyorsabbJarmu(jeladasok);
+
+            if (leggyorsabb != null)
+            {
+                string fajlNev = "leggyorsabb_jarmu.txt";
+                string eredmeny = $"Leggyorsabb jármű: {leggyorsabb.Rendszam} - {leggyorsabb.Ora}:{leggyorsabb.Perc}, {leggyorsabb.Sebesseg} km/h";
+
+                try
+                {
+                    File.WriteAllText(fajlNev, eredmeny);
+                    MessageBox.Show($"Az eredmény elmentve a {fajlNev} fájlba.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hiba történt a fájl mentésekor: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nincs elérhető adat.");
+            }
+        }
     }
 }

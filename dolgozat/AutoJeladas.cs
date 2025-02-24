@@ -66,5 +66,17 @@ namespace dolgozat
             return jeladasok
                 .Count(j => j.Ora == ora && j.Perc == perc);
         }
+
+        public static AutoJeladas LeggyorsabbJarmu(List<AutoJeladas> jeladasok)
+        {
+            if (jeladasok == null || jeladasok.Count == 0)
+            {
+                return null;
+            }
+
+            return jeladasok
+                .OrderByDescending(j => j.Sebesseg)
+                .FirstOrDefault();
+        }
     }
 }
