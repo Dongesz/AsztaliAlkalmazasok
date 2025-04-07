@@ -1,5 +1,5 @@
 # Visual Studio cache és beállítások kizárása
-.vs/
+.vs/*
 .vscode/
 *.suo
 *.user
