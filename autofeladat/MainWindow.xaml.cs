@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,45 @@ namespace autofeladat
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string connectionString = "server=server.fh2.hu;database=v2labgwj_12b;uid=v2labgwj_12b;password=4W56FNhfKJfeZVhGwasG;";
+
         public MainWindow()
         {
             InitializeComponent();
+            LoadKonyvek();
+        }
+
+        private void LoadKonyvek()
+        {
+            List<Konyv> konyvek = new List<Konyv>();
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM konyv";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        konyvek.Add(new Konyv
+                        {
+                            Id = reader.GetInt32("id"),
+                            Cim = reader.GetString("cim"),
+                            SzerzoId = reader.GetInt32("szerzoId"),
+                            Helyezes = reader.GetInt32("helyezes")
+                        });
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Hiba: " + ex.Message);
+                }
+            }
+
+            konyvDataGrid.ItemsSource = konyvek;
         }
     }
 }

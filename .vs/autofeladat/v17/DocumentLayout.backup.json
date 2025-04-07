@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Tanulo\\source\\repos\\autofeladat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|c:\\users\\tanulo\\source\\repos\\autofeladat\\autofeladat\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|c:\\users\\tanulo\\source\\repos\\autofeladat\\autofeladat\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|solutionrelative:autofeladat\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|C:\\Users\\Tanulo\\source\\repos\\autofeladat\\autofeladat\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|solutionrelative:autofeladat\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|c:\\users\\tanulo\\source\\repos\\autofeladat\\autofeladat\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|solutionrelative:autofeladat\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|C:\\Users\\Tanulo\\source\\repos\\autofeladat\\autofeladat\\konyv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D17337B-C6CA-45B9-A121-A3A7395A7CDE}|autofeladat\\autofeladat.csproj|solutionrelative:autofeladat\\konyv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Konyv.cs",
+              "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\autofeladat\\autofeladat\\Konyv.cs",
+              "RelativeDocumentMoniker": "autofeladat\\Konyv.cs",
+              "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\autofeladat\\autofeladat\\Konyv.cs",
+              "RelativeToolTip": "autofeladat\\Konyv.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:04:45.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\autofeladat\\autofeladat\\MainWindow.xaml",
               "RelativeDocumentMoniker": "autofeladat\\MainWindow.xaml",
@@ -34,13 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\autofeladat\\autofeladat\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "autofeladat\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\autofeladat\\autofeladat\\MainWindow.xaml.cs",
               "RelativeToolTip": "autofeladat\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwD8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T09:42:50.152Z",
               "EditorCaption": ""
